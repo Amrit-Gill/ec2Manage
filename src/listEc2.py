@@ -19,7 +19,7 @@ def listEc2(state):
     	Filters=[{'Name': 'instance-state-name', 'Values': [stateValue]}])
 	for instance in instances:
 		print('Instance State' + '\t' + 'Instance Id' + '\t' + 'Instance Type')
-    	print(state + '\t' + '\t' + instance.id + '\t' +  instance.instance_type)
+		print(state + '\t' + '\t' + instance.id + '\t' +  instance.instance_type)
 
 
 if __name__ == '__main__':
